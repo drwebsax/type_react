@@ -1,6 +1,6 @@
 # Web-based Audio Workstation Project with React.js and Typescript
 
-This project is working with Drsax.js with [Drsax.js](https://drsax.github.io/DrSAX/lib.1.8.html).
+This new project is working with Drsax.js with [Drsax.js](https://drsax.github.io/DrSAX/lib.1.8.html).
 
 ## Abstract
 
