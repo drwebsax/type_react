@@ -13,10 +13,10 @@ function App() {
 
         <Route path="/" element={ <Navigate to="/main" />} />
         <Route path="/main" element={ <Container /> } />
-        <Route path='/works/*' element={ <Works />} />
+        {/* <Route path='/works/*' element={ <Works />} />
         <Route path='/paper' element={ <div> paper </div>}/>
         <Route path='/music' element={ <div> music </div>}/>
-        <Route path="*" element={ <Navigate to="/music" />} />      
+        <Route path="*" element={ <Navigate to="/music" />} />       */}
 
       </Routes>
     </BrowserRouter>
