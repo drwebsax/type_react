@@ -1,12 +1,22 @@
 
-const init  = (() => {
 
+const init  =  (() => {
+
+
+    // let drsax = document.createElement('script');
+    // drsax.setAttribute('src', 'https://drsax.github.io/drsaxCore/js/drsax.js');
+    // document.head.childNodes[20].after(drsax);
+
+    
     const linkList: string[] = [];
 
     linkList.push('https://www.w3schools.com/w3css/4/w3.css');
     linkList.push('https://fonts.googleapis.com/css?family=Oswald');
     linkList.push('https://fonts.googleapis.com/css?family=Open Sans');
     linkList.push('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
 
     linkList.map((url) =>  {
 
@@ -16,7 +26,8 @@ const init  = (() => {
         document.head.childNodes[12].after(linkSet);
 
         return false;
-    })    
+    })  
+   
 
     let sheet = document.createElement('style');
     sheet.innerHTML = `
@@ -25,9 +36,23 @@ const init  = (() => {
     `;
     document.head.childNodes[18].after(sheet);
 
+    // setTimeout(()=>{
+    //     let drsaxSet = document.createElement('script');
+    //     drsaxSet.innerHTML = 'var DSX = new DSX';
+    //     document.head.childNodes[25].after(drsaxSet);
+    
+    // },2000)
+    
+
+
+   
+
+
+
 
     
 })()
+
 
 export default init
   

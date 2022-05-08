@@ -1,20 +1,32 @@
 
-export default function Contents() {
+import { useEffect, useState } from 'react';
+import React, {FC}  from "react";
 
+import FirstOsc from './section/firstOsc'
+
+
+interface propsContents{
+    isDrsax : boolean;
+
+}
+
+ const Contents :FC< propsContents > = (props) =>{
+
+    console.log(props.isDrsax)
     return (
 
         <div className="w3-content" style={{maxWidth: '1600px'}}>
             {/* Header */}
             <header className="w3-container w3-center w3-padding-48 w3-white">
-            <h1 className="w3-xxxlarge"><b>JANE BLOGLIFE</b></h1>
-            <h6>Welcome to the blog of <span className="w3-tag">Jane's world</span></h6>
+            <h1 className="w3-xxxlarge"><b>DrHong BLOGLIFE</b></h1>
+            <h6>Welcome to the Story of <span className="w3-tag">DrHong's world</span></h6>
             </header>
             {/* Image header */}
             <header className="w3-display-container w3-wide" id="home">
             <img className="w3-image" src="https://via.placeholder.com/300x50/000000" alt="Fashion Blog" width={1600} height={1060} />
             <div className="w3-display-left w3-padding-large">
                 <h1 className="w3-text-white">Jane's</h1>
-                <h1 className="w3-jumbo w3-text-white w3-hide-small"><b>FASHION BLOG</b></h1>
+                <h1 className="w3-jumbo w3-text-white w3-hide-small"><b>Life BLOG</b></h1>
                 {/* <h6><button className="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onClick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6> */}
             </div>
             </header>
@@ -23,31 +35,10 @@ export default function Contents() {
             {/* Blog entries */}
             <div className="w3-col l8 s12">
                 {/* Blog entry */}
-                <div className="w3-container w3-white w3-margin w3-padding-large">
-                <div className="w3-center">
-                    <h3>TITLE HEADING</h3>
-                    <h5>Title description, <span className="w3-opacity">May 2, 2016</span></h5>
-                </div>
-                <div className="w3-justify">
-                    <img src="/w3images/girl_hat.jpg" alt="Girl Hat" style={{width: '100%'}} className="w3-padding-16" />
-                    <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
-                    magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    {/* <p className="w3-left"><button className="w3-button w3-white w3-border" onClick="likeFunction(this)"><b><i className="fa fa-thumbs-up" /> Like</b></button></p>
-                    <p className="w3-right"><button className="w3-button w3-black" onClick="myFunction('demo1')" id="myBtn"><b>Replies &nbsp;</b> <span className="w3-tag w3-white">1</span></button></p> */}
-                    <p className="w3-clear" />
-                    <div className="w3-row w3-margin-bottom" id="demo1" style={{display: 'none'}}>
-                    <hr />
-                    <div className="w3-col l2 m3">
-                        <img src="/w3images/avatar_smoke.jpg" style={{width: '90px'}} />
-                    </div>
-                    <div className="w3-col l10 m9">
-                        <h4>George <span className="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
-                        <p>Great blog post! Following</p>
-                    </div>
-                    </div>
-                </div>
-                </div>
+              
+                <FirstOsc  isDrsax = {props.isDrsax}/> 
+              
+             
                 <hr />
                 {/* Blog entry */}
                 <div className="w3-container w3-white w3-margin w3-padding-large">
@@ -259,3 +250,5 @@ export default function Contents() {
 
     )
 }
+
+export default Contents
