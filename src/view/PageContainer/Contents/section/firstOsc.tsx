@@ -1,5 +1,6 @@
 import { FC, useEffect, useState } from "react"
 import Drsax from '../../../../audioContainer/Drsax';
+import AudioBox from './AudioBox';
 
 
 
@@ -27,6 +28,10 @@ const FirstOsc : FC<propsFirstOsc> = (props) => {
                         <h3> First Osillator </h3>
                         <h5>Title description, <span className="w3-opacity">May 2, 2016</span></h5>
                     </div>
+                    {
+
+                        props.isDrsax && <AudioBox />
+                    } 
                     <div className="w3-justify">
                         <img src="/w3images/girl_hat.jpg" alt="Girl Hat" style={{width: '100%'}} className="w3-padding-16" />
                         <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
