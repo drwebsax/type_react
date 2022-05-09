@@ -11,8 +11,7 @@ const Works = () =>{
         <Routes>
             
             <Route path="/" element={<Container />} />
-            <Route path="test" element={<div> test1</div>} />
-            {/* <Route path="*" element={ <Navigate to="/view" />} /> */}
+            <Route path="*" element={ <Navigate to="/view" />} />
       
         </Routes>
     )

@@ -8,6 +8,9 @@ import { useEffect, useState } from 'react';
 export default function Container(){
    
     const [ drsaxInit, drsaxSet] = useState(false);
+    const test =():void=>{
+        alert('d');
+    }
 
     useEffect(()=>{
        
@@ -47,7 +50,7 @@ export default function Container(){
 
             <Topbar />
 
-            <Contents isDrsax  ={drsaxInit} />
+            <Contents isDrsax  ={drsaxInit} test ={test}/>
      
             <Footer />
 
