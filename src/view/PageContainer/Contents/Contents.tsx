@@ -15,8 +15,8 @@ import Subscribe from './sideMenu/Subscribe';
 interface propsContents{
     isDrsax : boolean;
     test:  React.MouseEventHandler<HTMLButtonElement>;
-    // test(): void  ;
-    // test : ()=> void  ;
+    test1?(): void  ;
+    test2?: ()=> void  ;
 
 }
 

@@ -9,23 +9,19 @@ interface propsFirstOsc{
   
 }
 
-const FirstOsc : FC<propsFirstOsc> = (props) => {
+// const FirstOsc : FC<propsFirstOsc> = (props) => {
 
 
+function FirstOsc( props : propsFirstOsc ) {
 
-    function test(e:any){
-        
 
-        Drsax.oscCheck(e)
-    }
 
     return (
         <>
             <div className="w3-container w3-white w3-margin w3-padding-large">
                     <div className="w3-center">
-                        <button id = "0" onClick ={test} >sound</button>
-                        <button id = "1" onClick ={test} >stop</button>
-                        <h3> First Osillator </h3>
+                        
+                        <h3> Basic Osillator </h3>
                         <h5>Title description, <span className="w3-opacity">May 2, 2016</span></h5>
                     </div>
                     {
